@@ -89,3 +89,55 @@
     z-index: -1;
   }
 }
+
+#plant {
+  &-left,
+  &-right {
+    animation: leaf 1.5s ease infinite alternate-reverse;
+    transform-origin: bottom;
+    perspective: 100px;
+    transform-box: fill-box;
+    perspective: 500px;
+  }
+  &-right {
+    animation-delay: 0.5s;
+  }
+}
+
+#me {
+  transform-origin: bottom;
+  animation: me 1s ease infinite alternate-reverse;
+}
+
+#clock-arrow {
+  transform-origin: bottom;
+  animation: clock 3s linear infinite forwards;
+  transform-box: fill-box;
+}
+
+@keyframes leaf {
+  from {
+    transform: translateY(0) rotateY(0deg);
+  }
+  to {
+    transform: translateY(-200%) rotateY(180deg);
+  }
+}
+
+@keyframes me {
+  from {
+    transform: rotateZ(-2deg);
+  }
+  to {
+    transform: rotateZ(2deg);
+  }
+}
+
+@keyframes clock {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
