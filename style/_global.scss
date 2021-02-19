@@ -60,3 +60,20 @@ h5 {
   padding: 1rem 3rem;
   border-radius: 2rem;
 }
+
+// Button
+
+.btn {
+  padding: 0.75em 1.5em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: $bg-color;
+  color: #fff;
+  transition: all 0.3s;
+
+  &:focus,
+  &:hover {
+    background: lighten($color: $bg-color, $amount: 20%);
+  }
+}

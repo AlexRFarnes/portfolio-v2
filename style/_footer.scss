@@ -1,0 +1,16 @@
+.footer {
+  background: $bg-color;
+  color: #fff;
+  min-height: 10vh;
+  padding: 0 5%;
+  @include flex(center, center, row);
+
+  &__cp {
+    flex: 1 1 40rem;
+  }
+
+  &__list {
+    flex: 1 1 40rem;
+    @include flex(space-around, center, row);
+  }
+}

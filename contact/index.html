@@ -24,35 +24,25 @@
             <a href="../index.html" class="main-nav__link">Home</a>
           </li>
           <li class="main-nav__item">
-            <a href="./index.html" class="main-nav__link current">Projects</a>
+            <a href="../projects/" class="main-nav__link">Projects</a>
           </li>
           <li class="main-nav__item">
-            <a href="../contact/" class="main-nav__link">Contact</a>
+            <a href="./index.html" class="main-nav__link current">Contact</a>
           </li>
         </ul>
       </nav>
     </header>
-    <section class="projects">
-      <div class="project">
-        <h2 class="project__title">Travelly</h2>
-        <a href="#">
-          <img
-            class="project__img"
-            src="../img/travelly.jpg"
-            alt="Travelly project"
-          />
-        </a>
-      </div>
-      <div class="project">
-        <h2 class="project__title">Elena Joy</h2>
-        <a href="#">
-          <img
-            class="project__img"
-            src="../img/elena-joy.jpg"
-            alt="Elena Joy project"
-          />
-        </a>
-      </div>
+    <section class="contact">
+      <form class="contact__form">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required />
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required />
+        <label for="message">Message</label>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+      <img class="intro__image-splash" src="../img/splash.svg" alt="" />
     </section>
     <footer class="footer">
       <h4 class="footer__cp">Alex R. Farnes &copy; 2021</h4>
