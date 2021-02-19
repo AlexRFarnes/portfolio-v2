@@ -17,4 +17,42 @@ ul {
 
 a {
   text-decoration: none;
+  color: $gray-text;
+}
+
+// Font sizes
+
+h1 {
+  font-size: $header1;
+}
+
+li,
+button,
+label,
+input,
+a,
+p {
+  font-size: $text;
+}
+
+h2 {
+  font-size: $header2;
+}
+
+h3 {
+  font-size: $header3;
+}
+
+h4,
+h5 {
+  font-size: $header4;
+}
+
+// Utilities
+
+.current {
+  background: $bg-color;
+  color: #fff;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
 }

@@ -1,0 +1,91 @@
+.main-header {
+  width: 95%;
+  margin: 0 0 0 auto;
+}
+
+.main-nav {
+  @include flex(space-between, center, row);
+  min-height: 10vh;
+  width: 60%;
+  flex-wrap: wrap;
+
+  &__logo {
+    @include flex(flex-start, center, row);
+    flex: 1 1 10rem;
+    &-img {
+    }
+  }
+  &__title {
+    margin: 2rem;
+  }
+
+  &__list {
+    @include flex(space-around, center, row);
+    flex: 1 1 40rem;
+  }
+
+  &__item {
+  }
+
+  &__link {
+  }
+}
+
+.intro {
+  min-height: 90vh;
+  width: 90%;
+  margin: auto;
+  @include flex(space-between, center, row);
+  flex-wrap: wrap;
+
+  &__content {
+    flex: 1 1 40rem;
+  }
+
+  &__title {
+    font-size: 8rem;
+    padding-top: 2rem;
+    background: $gradient;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+  }
+
+  &__subtitle {
+    font-size: 6rem;
+    padding: 2rem 0;
+  }
+
+  &__text {
+    padding-top: 2rem;
+    color: $gray-text;
+  }
+
+  &__social {
+    margin-top: 4rem;
+  }
+
+  &__link {
+    &:not(:last-child) {
+      margin-right: 5rem;
+    }
+
+    &-icon {
+    }
+  }
+
+  &__images {
+    flex: 1 1 40rem;
+  }
+
+  &__image-me {
+  }
+
+  &__image-splash {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: -1;
+  }
+}
